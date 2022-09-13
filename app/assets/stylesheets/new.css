@@ -1,0 +1,56 @@
+label {
+    font-family: sans-serif, Arial, Helvetica, Verdana;
+    font-size:1.8rem;
+}
+
+input {
+    border-radius:7px;
+    border-width: 0;
+    width:25rem;
+    height:10rem;
+
+
+}
+
+#post_title {
+    height:2rem;
+    margin-top:10px;
+
+}
+
+#post_body {
+    margin-top:10px;
+}
+
+input[type="submit"] {
+    height:30px;
+    background-color: #f4decb;
+    border: 1px solid #e7b385 ;
+}
+
+form {
+    margin-top:50px;
+    height:200px;
+    width:300px;
+
+}
+
+.new_form_container {
+    display: flex;
+    flex-direction: row;
+    /* background-color: red; */
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+.new_form{
+    /* background-color: yellow; */
+    height:210px;
+}
+
+.new_form_item {
+    margin-top:20px;
+    align-self: flex-start;
+
+}

@@ -8,6 +8,12 @@
 
 }
 
+body {
+    background-color: #F8EEE7;
+    font-family: sans-serif, Arial, Helvetica, Verdana;
+    box-sizing: border-box;
+}
+
 .index.container > ul, .index.container > li {
 
     list-style: none;

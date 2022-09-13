@@ -1,12 +1,13 @@
-<%= current_user%>
-<%= form_with model: @post do |form| %>
+<%= form_with model: @post, data: { turbo: false } do |form| %>
 <%= form.label :title, "Title:" %>
 <%= form.text_field :title%>
 <%= form.label :body, "Post:" %>
 <%= form.text_field :body%>
+<%= form.submit "Create Post" %>
 <%end%>
 <%= link_to "Sign up", new_user_registration_path %>
 <%= link_to "Sign in", new_user_session_path %>
 <%=button_to "Sign out", destroy_user_session_path,:method => :delete%>
 <%= link_to "Edit profile", edit_user_registration_path %>
+<%= link_to "Root", root_path%>
 

@@ -1,0 +1,7 @@
+Here is the index page 
+
+<% @posts.each do |post|%>
+<%=post.title%>
+<%=post.body%>
+<%end%>
+<%= link_to "New Post", new_post_path%>

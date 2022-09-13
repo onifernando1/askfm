@@ -1,6 +1,7 @@
 .header.container {
     /* background-color: #2CCED2; */
-    background-image: linear-gradient(to right, #76CDCD,#2CCED2 );
+    /* background-image: linear-gradient(to right, #76CDCD,#2CCED2 ); */
+    background-color:  #eeab7bd2;
     font-family: sans-serif, Arial, Helvetica, Verdana;
     color:white;
     font-size:30px;

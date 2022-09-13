@@ -8,6 +8,13 @@ Here is the index page
     <li>
         <%=post.body%>
     </li>
+    <%# <%= link_to 'Delete', { :controller => 'posts', :action => 'destroy', :id => post.id }, 
+                      { :confirm => 'Are you sure?', :method => :delete, :remote => true} %> 
+<%= link_to "Delete", post_path(post), data: {
+                    turbo_method: :delete,
+                    turbo_confirm: "Are you sure?"
+                  } %>
     <%end%>
 </ul>
 <%= link_to "New Post", new_post_path%>
+

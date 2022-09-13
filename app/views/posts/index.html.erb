@@ -1,9 +1,11 @@
 <div class="index container">
 <br/>
+
     <%if user_signed_in?%>
     "You are logged in"
     <%= current_user.name%>
     <%end%>
+  
     <% @posts.each do |post|%>
     <div class="post_container">
     <ul>

@@ -1,1 +1,8 @@
-Hi!
+<%= form_with model: @post do |form| %>
+<%= form.label :title, "Title:" %>
+<%= form.text_field :title%>
+<%= form.label :body, "Post:" %>
+<%= form.text_field :body%>
+<%end%>
+<%= link_to "Sign up", new_user_registration_path %>
+<%= link_to "Sign in", new_user_session_path %>

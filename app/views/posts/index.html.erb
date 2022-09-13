@@ -1,7 +1,13 @@
 Here is the index page 
-
+<%if user_signed_in?%>
+<%= current_user.name%>
+<%end%>
 <% @posts.each do |post|%>
-
+<%if user_signed_in?%>
+    <%=post.user.name%>
+<%else %>
+<p>Sign in to view user name </p>
+<%end%>
 <ul>
     <li>
         <%=post.title%>

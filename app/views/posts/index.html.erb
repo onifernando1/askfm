@@ -1,7 +1,13 @@
 Here is the index page 
 
 <% @posts.each do |post|%>
-<%=post.title%>
-<%=post.body%>
-<%end%>
+<ul>
+    <li>
+        <%=post.title%>
+    </li>
+    <li>
+        <%=post.body%>
+    </li>
+    <%end%>
+</ul>
 <%= link_to "New Post", new_post_path%>

@@ -26,6 +26,14 @@ class PostsController < ApplicationController
         end 
     end 
 
+    def destroy
+        @post.find(params[:id])
+        @post.destroy
+        redirect_to root_path status: :see_other
+    end 
+
+    private
+
     def post_params
         params.require(:post).permit(:title,:body, :user_id)
     end 

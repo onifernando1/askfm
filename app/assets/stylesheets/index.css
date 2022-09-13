@@ -30,9 +30,12 @@
     background-color: #cd3636;
     opacity:0.6;
     border-radius: 15%;
-    margin-top:10px;
     padding:4px;
+    
+}
 
+.delete_link > li {
+    margin-top:10px;
 }
 
 .post_container {
@@ -41,10 +44,13 @@
     margin-top:10px;
     border-radius: 6%;
     width: 500px;
-    height: 250px;
-
+    height: 300px;
+    
 }
 
 .post_container > ul {   
     list-style: none;
+    display:grid;
+    grid-template-rows: 3fr 1fr ;
+    
 }

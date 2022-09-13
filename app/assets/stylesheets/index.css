@@ -1,0 +1,8 @@
+.index.container {
+    font-size:1.8em;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(to bottom, #76CDCD,#F9968B 30% );
+
+}

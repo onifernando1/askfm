@@ -1,31 +1,34 @@
-Here is the index page 
-<%if user_signed_in?%>
-"You are logged in"
-<%= current_user.name%>
-<%end%>
-<% @posts.each do |post|%>
-<%if user_signed_in?%>
-    <%=post.user.name%>
-<%else %>
-<p>Sign in to view user name </p>
-<%end%>
-<ul>
-    <li>
-        <%=post.title%>
-    </li>
-    <li>
-        <%=post.body%>
-    </li>
-<%= link_to "Delete", post_path(post), data: {
-                    turbo_method: :delete,
-                    turbo_confirm: "Are you sure?"
-                  } %>
+<div class="index container">
+    <%if user_signed_in?%>
+    "You are logged in"
+    <%= current_user.name%>
     <%end%>
-</ul>
-<%= link_to "New Post", new_post_path%>
-<%= link_to "Sign up", new_user_registration_path %>
-<%= link_to "Sign in", new_user_session_path %>
-<%=button_to "Sign out", destroy_user_session_path,:method => :delete%>
-<%= link_to "Edit profile", edit_user_registration_path %>
-<%= link_to "Root", root_path%>
+    <% @posts.each do |post|%>
+    <ul>
+        <li>
+        <%if user_signed_in?%>
+            <%=post.user.name%>
+            </li>
+        <%else %>
+        Sign in to view user name
+        <%end%>
+            <li>
+                <%=post.title%>
+            </li>
+            <li>
+                <%=post.body%>
+            </li>
+        <%= link_to "Delete", post_path(post), data: {
+                            turbo_method: :delete,
+                            turbo_confirm: "Are you sure?"
+                        } %>
+    </ul>
 
+        <%end%>
+    <%= link_to "New Post", new_post_path%>
+    <%= link_to "Sign up", new_user_registration_path %>
+    <%= link_to "Sign in", new_user_session_path %>
+    <%=button_to "Sign out", destroy_user_session_path,:method => :delete%>
+    <%= link_to "Edit profile", edit_user_registration_path %>
+    <%= link_to "Root", root_path%>
+</div>

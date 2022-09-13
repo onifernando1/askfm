@@ -6,3 +6,29 @@
     background-image: linear-gradient(to bottom, #76CDCD,#F9968B 30% );
 
 }
+
+.index.container > ul, .index.container > li {
+
+    list-style: none;
+    color:white;
+}
+
+.delete_link {
+    margin-top:10px;
+}
+
+.delete_link > li > a:visited{
+    color:white;
+}
+
+.delete_link > li > a:link{
+    color:white;
+    text-decoration: none;
+    font-size:30px;
+    background-color: #cd3636;
+    opacity:0.6;
+    border-radius: 15%;
+    margin-top:10px;
+    padding:4px;
+
+}

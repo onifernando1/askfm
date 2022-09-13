@@ -18,10 +18,16 @@
             <li>
                 <%=post.body%>
             </li>
-        <%= link_to "Delete", post_path(post), data: {
+            
+            <div class="delete_link">
+            <li>
+                    <%= link_to "Delete", post_path(post), data: {
                             turbo_method: :delete,
                             turbo_confirm: "Are you sure?"
                         } %>
+            </li>
+            </div>
+
     </ul>
 
         <%end%>

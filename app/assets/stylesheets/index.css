@@ -6,7 +6,6 @@
     /* background-image: linear-gradient(to bottom, #76CDCD,#F9968B 30% ); */
     background-color: #F8EEE7;
 
-
 }
 
 .index.container > ul, .index.container > li {
@@ -31,6 +30,7 @@
     opacity:0.6;
     border-radius: 15%;
     padding:4px;
+
     
 }
 
@@ -40,11 +40,13 @@
 
 .post_container {
     background-color: #f4decb;
+    box-shadow:10px 10px 10px  inset #efd3bb ;
     margin-bottom:10px;
     margin-top:10px;
     border-radius: 6%;
     width: 500px;
     height: 300px;
+    padding:10px;
     
 }
 
@@ -53,4 +55,16 @@
     display:grid;
     grid-template-rows: 3fr 1fr ;
     
+}
+
+.signout {
+
+    height:35px;
+    width:100px;
+    font-size:1rem;
+    padding:10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #efd3bb;
 }

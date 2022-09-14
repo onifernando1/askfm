@@ -1,0 +1,30 @@
+.login_container {
+    margin-top:50px;
+    margin-left:40px;
+}
+
+.remember_me .field > label {
+    font-size: 1rem;
+    margin-left:-80px;
+}
+
+.remember_me .field  {
+    margin-top:-20px;
+    margin-left:-88px;
+    display:flex;
+    align-items: center;
+}
+
+.signinlinks > a:link {
+    color:black;
+    
+}
+
+.signinlinks > a:visited {
+    color:black;
+
+}
+
+.signinlinks {
+    margin-top:20px;
+}

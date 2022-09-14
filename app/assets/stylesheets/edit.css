@@ -9,6 +9,9 @@
 .edit_user_container {
     margin-left:80px;
     margin-top:30px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .button_to > button, .actions > input  {

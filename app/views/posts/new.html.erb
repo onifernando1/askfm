@@ -14,11 +14,16 @@
   <div class ="new_form">
     <%= form_with model: @post, data: { turbo: false } do |form| %>
     <div class="new_form_item">
+    <div>
       <%= form.label :title, "Title:" %>
+      </div>
       <%= form.text_field :title%>
     </div>
     <div class="new_form_item">
+        <div>
       <%= form.label :body, "Post:" %>
+          </div>
+
       <%= form.text_field :body%>
     </div>
     <div class="new_form_item">

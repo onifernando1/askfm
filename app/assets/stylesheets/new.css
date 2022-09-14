@@ -30,25 +30,20 @@ label, .edit_title {
 
 .new_form > form {
     margin-top:50px;
-    height:200px;
-    width:300px;
+    /* height:200px;
+    width:300px; */
 
 }
 
 .new_form_container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     /* background-color: red; */
-    justify-content: center;
-    align-items: flex-start;
-    height:500px;
+    align-items: center;
 
 }
 
-.new_form{
-    /* background-color: yellow; */
-    height:210px;
-}
+
 
 .new_form_item {
     margin-top:20px;

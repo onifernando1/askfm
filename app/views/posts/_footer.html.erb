@@ -1,7 +1,3 @@
-<br/>
-<br/>
-<br/>
-<br/>
 <% if user_signed_in?%>
     <div class = "footer_btn">
         <%=button_to "Sign out", destroy_user_session_path,:method => :delete, class: "signout"%>

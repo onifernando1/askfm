@@ -41,6 +41,7 @@ label, .edit_title {
     /* background-color: red; */
     justify-content: center;
     align-items: flex-start;
+    height:500px;
 
 }
 

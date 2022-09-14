@@ -1,9 +1,16 @@
 .signupcontainer {
     margin-top:30px;
     margin-left:50px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .signuplinks {
     margin-top:20px;
-    margin-left:3px;
+    margin-left:-253px;
+}
+
+.signuplinks > a:visited  {
+  color:black;
 }

@@ -1,6 +1,9 @@
 .login_container {
     margin-top:50px;
     margin-left:40px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .remember_me .field > label {
@@ -27,4 +30,5 @@
 
 .signinlinks {
     margin-top:20px;
+    margin-left:-50px;
 }

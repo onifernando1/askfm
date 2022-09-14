@@ -1,0 +1,23 @@
+.field > input {
+    height: 30px;
+    width: 200px;
+    margin-top:20px;
+    margin-bottom:20px;
+
+}
+
+.edit_user_container {
+    margin-left:80px;
+    margin-top:30px;
+}
+
+.button_to > button, .actions > input  {
+    height:30px;
+    background-color: #f5c79f;
+    border: 1px solid #e7b385 ;
+}
+
+.edit_font {
+    font-family: sans-serif, Arial, Helvetica, Verdana;
+
+}

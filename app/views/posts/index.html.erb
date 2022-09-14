@@ -11,7 +11,7 @@
     <ul>
         <div>
         <li>
-        <%if user_signed_in?%>
+        <%if user_signed_in? && post.user%>
             Author: <%=post.user.name%>
             </li>
         <%else %>

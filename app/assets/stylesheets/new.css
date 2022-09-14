@@ -1,9 +1,9 @@
-label {
+label, .edit_title {
     font-family: sans-serif, Arial, Helvetica, Verdana;
     font-size:1.8rem;
 }
 
-input {
+.new_form_item > input {
     border-radius:7px;
     border-width: 0;
     width:25rem;
@@ -12,23 +12,23 @@ input {
 
 }
 
-#post_title {
+.new_form_item > #post_title {
     height:2rem;
     margin-top:10px;
 
 }
 
-#post_body {
+.new_form_item >  #post_body {
     margin-top:10px;
 }
 
-input[type="submit"] {
+.new_form_item > input[type="submit"] {
     height:30px;
     background-color: #f4decb;
     border: 1px solid #e7b385 ;
 }
 
-form {
+.new_form > form {
     margin-top:50px;
     height:200px;
     width:300px;
